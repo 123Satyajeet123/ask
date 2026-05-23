@@ -47,15 +47,6 @@ make        # build
 make clean  # clean
 ```
 
-Requires: C compiler, libcurl.
-
-## Design
-
-- Reads stdin → builds chat completion request → streams response to stdout
-- Detects TTY vs pipe (different output formatting)
-- Streams tokens as they arrive (Server-Sent Events)
-- Single C file, ~500 lines
-
 ## License
 
 MIT
